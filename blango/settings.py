@@ -43,6 +43,7 @@ class Dev(Configuration):
         'django.contrib.staticfiles',
         'crispy_forms',
         'crispy_bootstrap5',
+        'blango_auth',
         'blog',
         "debug_toolbar"
     ]
@@ -171,6 +172,8 @@ class Dev(Configuration):
           "level": "DEBUG",
       },
   }
+
+    AUTH_USER_MODEL = "blango_auth.User"
 
     PASSWORD_HASHERS = [
       'django.contrib.auth.hashers.Argon2PasswordHasher',
