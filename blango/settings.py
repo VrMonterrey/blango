@@ -182,6 +182,9 @@ class Dev(Configuration):
       'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
   ]
 
+    EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+    ACCOUNT_ACTIVATION_DAYS = 7
+
     ALLOWED_HOSTS = ['*']
     X_FRAME_OPTIONS = 'ALLOW-FROM ' + os.environ.get('CODIO_HOSTNAME') + '-8000.codio.io'
     CSRF_COOKIE_SAMESITE = None
