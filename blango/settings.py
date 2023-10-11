@@ -47,6 +47,7 @@ class Dev(Configuration):
         'blango_auth',
         'blog',
         "debug_toolbar",
+        "rest_framework",
 
         "allauth",
         "allauth.account",
